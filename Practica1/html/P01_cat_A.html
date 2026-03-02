@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Adds stupid idiot icons. -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<!-- omg bruh im an idiot bro i could have just put the dark theme thing at the start. -->
+
+<body data-bs-theme="dark">
+
+    <!-- Top navbar. -->
+    <!-- Top navbar. -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <!-- Show Reevolve delta. -->
+            <a class="navbar-brand" href="#">
+                <!-- Draw icon. -->
+                <img src="../assets/logos/reevolve-dorito.png" alt="Logo" width="32" height="32"
+                    class="d-inline-block align-text-top">
+            </a>
+
+            <!-- Buttons. -->
+            <ul class="navbar-nav me-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../html\P01_about_us.html">About Us</a>
+                </li>
+
+                <!-- Products drop down thing. -->
+                <li class="nav-item dropdown">
+                    <!-- Products button. -->
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Products
+                    </a>
+
+                    <!-- List that contains my products. -->
+                    <ul class="dropdown-menu">
+                        <!-- Listen I didn't know how to name them okay?. -->
+                        <li><a class="dropdown-item" href="../html\P01_cat_B.html">Category A</a></li>
+                        <li><a class="dropdown-item" href="../html\P01_cat_B.html">Category B</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <!-- Search form. -->
+            <form class="d-flex">
+                <!-- Search bar. -->
+                <input class="form-control me-2" type="search" placeholder="Search products...">
+                <!-- Green search button. -->
+                <button class="btn btn-outline-success">Search</button>
+            </form>
+
+            <!-- Right corner buttons. -->
+            <form class="d-flex">
+                <!-- Buttons. -->
+                <ul class="navbar-nav me-auto">
+
+                    <!-- Login button. -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" role="button" data-bs-toggle="modal"
+                            data-bs-target="#loginModal"> <!-- Links to the modal I think?. -->
+                            <!-- Putting the image like this seems to work. -->
+                            <i class="bi bi-person-circle me-2 text-white"></i>
+                            Login</a>
+                    </li>
+
+                    <!-- Shopping button. -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-bag-fill me-2 text-white"></i>
+                        </a>
+                    </li>
+                </ul>
+            </form>
+
+        </div>
+    </nav>
+
+    <br> <!-- I hope doing this isn't a crime or something. -->
+    <h1>Category A</h1>
+
+    <!-- Product cards. -->
+
+    <!-- Row. -->
+    <div class="row">
+
+        <!-- Server. -->
+        <div class="card" style="width: 18rem;">
+            <img src="../assets\3d-icons\server.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Server</h5>
+                <p class="card-text">A 3D render of an old server </p>
+            </div>
+        </div>
+
+        <!-- Client. -->
+        <div class="card" style="width: 18rem;">
+            <img src="../assets\3d-icons\client.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Client </h5>
+                <p class="card-text">A 3D render of a laptop representing a client </p>
+            </div>
+        </div>
+
+        <!-- Stuck gears. -->
+        <div class="card" style="width: 18rem;">
+            <img src="../assets\3d-icons\stuck-gears.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Stuck gears </h5>
+                <p class="card-text">A 3D render of 2 gears stuck, good for representing a problem </p>
+            </div>
+        </div>
+
+        <!-- Raycast. -->
+        <div class="card" style="width: 18rem;">
+            <img src="../assets\3d-icons\raycast.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Raycast </h5>
+                <p class="card-text">A 3D render of a raycast operation, this icon is far newer as it was made for a
+                    video that was cancelled. </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login modal. -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Header (Log in text thingy)-->
+                <div class="modal-header">
+                    <h5 class="modal-title">Log In</h5>
+                    <!-- X button (exit.)-->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body"> <!-- DO NOT REMOVE THE BODY TAG IT MAKES IT LOOK SO UGLY AAAH! -->
+
+                    <div class="form-check mb-3">
+                        <!-- Email -->
+                        <label class="form-label">Email</label>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                            <span class="input-group-text">
+                                <i class="bi bi-person-fill"></i>
+                            </span>
+                        </div>
+
+                        <!-- Password -->
+                        <label class="form-label">Password</label>
+                        <div class="input-group mb-3">
+                            <input type="password" class="form-control" placeholder="Enter your password" required>
+                            <span class="input-group-text">
+                                <i class="bi bi-key-fill"></i>
+                            </span>
+                        </div>
+
+                        <!-- Remember (i placed it inside because it looks ugleh outisde)-->
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="rememberCheck" required>
+                            <!-- i placed required there because i can-->
+                            <label class="form-check-label" for="rememberCheck">
+                                Remember
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <!-- Login Button -->
+                    <div class="text-center"> <!-- this aligns on center too so it works I think. -->
+                        <button class="btn btn-primary px-4">Login</button>
+                    </div>
+
+                </div>
+
+                <!-- Stupid text that shows up if you don't have an account. -->
+                <div class="modal-footer justify-content-center">
+                    <small>
+                        Don't have an account bozo ?
+                        <!-- Link to sign up modal. -->
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign up here</a>
+                    </small>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign up modal.-->
+    <div class="modal fade" id="signupModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4">
+
+                <!-- Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+
+                    <form>
+                        <!-- First + Last name row -->
+                        <div class="row mb-3">
+
+                            <!-- First name input. -->
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First Name" required>
+                            </div>
+
+                            <!-- Last name input. -->
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last Name" required>
+                            </div>
+                        </div>
+
+                        <!-- Email input. -->
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+
+                        <!-- Password input. -->
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="Password" required>
+                        </div>
+
+                        <!-- Confirm password input. -->
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="Confirm Password" required>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer justify-content-end">
+                    <button type="submit" class="btn btn-success px-4">
+                        Sign Up
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
